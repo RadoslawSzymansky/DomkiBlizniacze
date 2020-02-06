@@ -1,0 +1,13 @@
+.offer {
+    margin-top: 100px;
+
+    .text {
+        max-width: 80%;
+    };
+
+    &__list {
+        .product {
+            margin-top: 50px;
+        }
+    }
+}

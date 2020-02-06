@@ -4281,6 +4281,106 @@ a {
   color: #fff;
 }
 
+.product {
+  position: relative;
+  -webkit-box-shadow: 0 0 1px 0 #5f5f5f;
+          box-shadow: 0 0 1px 0 #5f5f5f;
+  height: 200px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.product__img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__img-wrapper .img {
+  max-width: 100px;
+}
+
+.product__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__price-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #0dac66;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.product__price-wrapper .price {
+  color: #000;
+  font-weight: 900;
+  font-size: 25px;
+  padding-left: 25px;
+}
+
+.product .product__label-1, .product .product__label-2 {
+  position: absolute;
+  background-color: #0dac66;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  line-height: 2.5;
+}
+
+.product--sold .product__label-1, .product--sold .product__label-2 {
+  background-color: #b63838;
+}
+
+.product--sold .price {
+  color: #ccc;
+}
+
+.product--reserved .product__label-1, .product--reserved .product__label-2 {
+  background-color: #b28d28;
+}
+
+.product--reserved .price {
+  color: #ccc;
+}
+
+.product .product__label-1 {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  width: 200px;
+  top: 81px;
+  left: -82px;
+}
+
+.product .product__label-2 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 180px;
+  top: 31px;
+  right: -44px;
+}
+
 .menu {
   top: 0;
   right: 0;
@@ -4393,6 +4493,45 @@ a {
 .about .btn {
   display: inline-block;
   margin-top: 35px;
+}
+
+.offer {
+  margin-top: 100px;
+}
+
+.offer .text {
+  max-width: 80%;
+}
+
+.offer__list .product {
+  margin-top: 50px;
+}
+
+.localization {
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.localization__header {
+  margin-top: 40px;
+  background-image: url(/assets/header.png);
+  min-height: 500px;
+  background-size: cover;
+  position: relative;
+}
+
+.localization__columns {
+  font-size: 15px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -130px;
+  left: 15%;
+  right: 15%;
+  padding: 15px;
+}
+
+.localization .col-4 {
+  padding: 15px;
 }
 
 body {
