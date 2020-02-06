@@ -1,0 +1,14 @@
+.btn {
+    border: none;
+    background-color: $color-primary;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: $transition-time;
+    
+    &:hover {
+        background-color: #fff;
+        color: $color-primary;
+        box-shadow: 0 0 2px 2px;
+    }
+};

@@ -1,0 +1,28 @@
+@import "bootsrap-grid";
+@import "variables";
+@import "typography";
+@import "mediaqueries";
+
+@import "components/button";
+
+@import "sections/menu";
+@import "sections/header";
+
+// main styles
+
+body {
+    margin: 0;
+    padding: 0;
+    margin-top: 80px;
+    min-height: 200vh;
+};
+
+* {
+    box-sizing: border-box;
+};
+
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 10px;
+}
