@@ -1,0 +1,28 @@
+.about {
+    margin-top: 80px;
+
+    &__img-wrapper {
+        width: 80%;
+        
+        &::after {
+            display: block;
+            content: "";
+            background-color: $color-primary;
+            width: 80%;
+            height: 100%;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: -1;
+        }
+    }
+
+    .text {
+        max-width: 80%;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 35px;
+    }
+}

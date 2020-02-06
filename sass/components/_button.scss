@@ -3,12 +3,29 @@
     background-color: $color-primary;
     color: #fff;
     padding: 10px 20px;
-    border-radius: 25px;
     transition: $transition-time;
-    
+    cursor: pointer;
+
     &:hover {
         background-color: #fff;
         color: $color-primary;
         box-shadow: 0 0 2px 2px;
+    }
+
+    &--round {
+        border-radius: 25px;
+    }
+
+    &--overlay {
+        text-transform: uppercase;
+        background-color: transparent;        
+        color: $color-text;
+        box-shadow: 0 0 2px 1px $color-primary;
+
+        &:hover {
+            // box-shadow: 0 0 2px 1px $color-text;
+            background-color: $color-primary;
+            color: #fff;
+        }
     }
 };

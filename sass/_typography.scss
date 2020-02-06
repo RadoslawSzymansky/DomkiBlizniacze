@@ -21,5 +21,11 @@ a {
 .text {
     &--spaced {
         letter-spacing: 7px;
-    }
+    };
+    &--title {
+        color: $color-text-light;
+        font-size: $font-size-large;
+        text-transform: uppercase;
+        margin: 20px 0;
+    };
 };

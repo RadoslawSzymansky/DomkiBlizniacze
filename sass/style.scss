@@ -7,6 +7,7 @@
 
 @import "sections/menu";
 @import "sections/header";
+@import "sections/about";
 
 // main styles
 
@@ -25,4 +26,10 @@ body {
     max-width: $container-width;
     margin: 0 auto;
     padding: 10px;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
