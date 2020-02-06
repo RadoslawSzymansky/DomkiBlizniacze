@@ -33,5 +33,72 @@
         &:hover {
             background-color: $color-primary-dark;
         }
+    };
+
+    .form {
+
+
+        &__data {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        input {
+            padding: 10px;
+        }
+        input, textarea {
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            border-bottom: 1px  solid #ddd;
+            margin: 0 auto;
+
+            &::placeholder {
+                color: #ccc;
+            }
+        };
+
+        input {
+            width: 25%;
+            margin: 10px 3% ;
+        }
+
+        &__message {
+            width: 90%;
+            margin-top: 20px;
+            padding: 0;
+            position: relative;
+            left: 5%;
+            font-size: 15px;
+            line-height: 1;
+            padding-top: 10px;
+            padding-left: 10px;
+        };
+
+        &__actions {
+            margin-top: 40px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 50px;
+            
+            .checkbox {
+                margin: 0;
+                padding: 0;
+                width: 40px;
+            }
+            label {
+                font-size: 12px;
+                max-width: 70%;
+            }
+            .btn {
+                background-color: transparent;
+                margin-left: 10px;
+                &:hover {
+                    background-color: $color-primary-dark;
+                }
+            }
+        }
     }
+
 };

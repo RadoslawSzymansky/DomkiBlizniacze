@@ -4582,6 +4582,91 @@ a {
   background-color: #27805e;
 }
 
+.contact .form__data {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contact .form input {
+  padding: 10px;
+}
+
+.contact .form input, .contact .form textarea {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  border-bottom: 1px  solid #ddd;
+  margin: 0 auto;
+}
+
+.contact .form input::-webkit-input-placeholder, .contact .form textarea::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+.contact .form input:-ms-input-placeholder, .contact .form textarea:-ms-input-placeholder {
+  color: #ccc;
+}
+
+.contact .form input::-ms-input-placeholder, .contact .form textarea::-ms-input-placeholder {
+  color: #ccc;
+}
+
+.contact .form input::placeholder, .contact .form textarea::placeholder {
+  color: #ccc;
+}
+
+.contact .form input {
+  width: 25%;
+  margin: 10px 3%;
+}
+
+.contact .form__message {
+  width: 90%;
+  margin-top: 20px;
+  padding: 0;
+  position: relative;
+  left: 5%;
+  font-size: 15px;
+  line-height: 1;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.contact .form__actions {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.contact .form__actions .checkbox {
+  margin: 0;
+  padding: 0;
+  width: 40px;
+}
+
+.contact .form__actions label {
+  font-size: 12px;
+  max-width: 70%;
+}
+
+.contact .form__actions .btn {
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+.contact .form__actions .btn:hover {
+  background-color: #27805e;
+}
+
 .footer {
   min-height: 50px;
   padding: 10px;
