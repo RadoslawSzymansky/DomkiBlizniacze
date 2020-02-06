@@ -1,0 +1,15 @@
+.footer {
+    min-height: 50px;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: $color-primary-dark;
+
+
+    &__copyrights {
+  
+    };
+    &__author {
+        text-align: right;
+    };
+};
