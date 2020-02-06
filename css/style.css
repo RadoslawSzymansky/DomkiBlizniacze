@@ -4549,9 +4549,8 @@ a {
 .contact__img {
   display: block;
   margin: 0 auto;
-  max-width: 80%;
-  position: absolute;
-  top: -80%;
+  position: relative;
+  top: -30%;
 }
 
 .contact__right-side {
@@ -4563,12 +4562,14 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 50px;
+}
+
+.contact__right-side .btn:nth-child(2) {
+  margin-bottom: 30px;
 }
 
 .contact .btn {
@@ -4584,8 +4585,8 @@ a {
 
 .contact .form__data {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .contact .form input {
@@ -4623,7 +4624,7 @@ a {
 
 .contact .form__message {
   width: 90%;
-  margin-top: 20px;
+  margin-top: 0px;
   padding: 0;
   position: relative;
   left: 5%;

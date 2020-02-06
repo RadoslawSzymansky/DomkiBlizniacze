@@ -12,17 +12,19 @@
     &__img {
         display: block;
         margin: 0 auto;
-        max-width: 80%;
-        position: absolute;
-        top: -80%;
+        position: relative;
+        top: -30%;
     };
 
     &__right-side {
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
         align-items: center;
+        padding-bottom: 50px;
+        .btn:nth-child(2) {
+            margin-bottom: 30px;
+        }
     }
 
     .btn {
@@ -40,8 +42,8 @@
 
         &__data {
             text-align: center;
-            margin-top: 50px;
-            margin-bottom: 50px;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
         input {
             padding: 10px;
@@ -65,7 +67,7 @@
 
         &__message {
             width: 90%;
-            margin-top: 20px;
+            margin-top: 0px;
             padding: 0;
             position: relative;
             left: 5%;
@@ -81,7 +83,7 @@
             justify-content: flex-start;
             align-items: center;
             margin-bottom: 50px;
-            
+
             .checkbox {
                 margin: 0;
                 padding: 0;
