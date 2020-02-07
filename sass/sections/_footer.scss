@@ -4,15 +4,16 @@
     font-size: 14px;
     color: #fff;
     background-color: $color-primary-dark;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 
     @include mq(medium) {
         font-size: 8px;
         padding: 2px 0;
     }
 
-    &__copyrights {
-        
-    };
     &__author {
         text-align: right;
     };

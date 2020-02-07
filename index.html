@@ -15,7 +15,7 @@
         <div class="burger__item"></div>
     </div>
     <div class="wrapper">
-        <section class="menu">
+        <section class="menu section">
             <div class="container menu__wrapper">
                 <div class="menu__logo">
                     bliźniaki 
@@ -23,17 +23,17 @@
                     <span class="text--spaced">łężyca</span>
                 </div>
                 <ul class="menu__list">
-                    <li class="menu__item"><a href="" class="menu__link menu__link--active">Strona Główna</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">O nas</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">Oferta</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">Lokalizacja</a></li>
-                    <li class="menu__item"><a href="" class="menu__link">Kontakt</a></li>
-                    <li class="menu__item"><button class="btn btn--round menu__phone">+48 607 893 457</button></li>
+                    <li class="menu__item"><a href="#" class="menu__link menu__link--active">Strona Główna</a></li>
+                    <li class="menu__item"><a href="#about" class="menu__link">O nas</a></li>
+                    <li class="menu__item"><a href="#offer" class="menu__link">Oferta</a></li>
+                    <li class="menu__item"><a href="#localization" class="menu__link">Lokalizacja</a></li>
+                    <li class="menu__item"><a href="#contact" class="menu__link">Kontakt</a></li>
+                    <li class="menu__item menu__item--phone"><a href="tel:+48607893457" class="btn btn--round menu__phone">+48 607 893 457</a></li>
                 </ul>
             </div>
         </section>
         <section class="header"></section>
-        <section class="about">
+        <section class="about section" id="about">
             <div class="container row">
                 <div class="col-12 col-md-6">
                     <h1 class="text--title">o nas</h1>
@@ -54,7 +54,7 @@
                 </div>
             </div>
         </section>
-        <section class="offer">
+        <section class="offer section" id="offer">
             <div class="container">
                 <h1 class="text--title">poznaj ofertę</h1>
                 <p class="text">
@@ -198,7 +198,7 @@
                 </div>
             </div>
         </section>
-        <section class="localization">
+        <section class="localization section" id="localization">
             <div class="container">
                 <h1 class="text--title">Lokalizacja</h1>
                 <p class="text">
@@ -218,7 +218,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact section" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-9">
@@ -262,6 +262,12 @@
             </div>
         </footer>
     </div>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script src="./js/link-control.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
