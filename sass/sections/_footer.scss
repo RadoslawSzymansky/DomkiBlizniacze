@@ -1,13 +1,17 @@
 .footer {
     min-height: 50px;
-    padding: 10px;
+    padding: 10px 0;
     font-size: 14px;
     color: #fff;
     background-color: $color-primary-dark;
 
+    @include mq(medium) {
+        font-size: 8px;
+        padding: 2px 0;
+    }
 
     &__copyrights {
-  
+        
     };
     &__author {
         text-align: right;

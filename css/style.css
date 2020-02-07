@@ -4892,7 +4892,7 @@ a {
 @media (max-width: 800px) {
   .localization__text {
     max-width: 80%;
-    margin-left: 0;
+    margin: 0 auto;
     margin-bottom: 10%;
     padding: 25px;
     background-color: #fff;
@@ -4911,6 +4911,12 @@ a {
   background-image: url(/assets/contactbgc.png);
   background-size: cover;
   padding: 50px 10px;
+}
+
+@media (max-width: 800px) {
+  .contact {
+    margin-top: 50px;
+  }
 }
 
 .contact .title, .contact .text {
@@ -4941,6 +4947,32 @@ a {
 
 .contact__right-side .btn:nth-child(2) {
   margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+  .contact__right-side {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 30px;
+    padding-bottom: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contact__right-side .btn:nth-child(2) {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 420px) {
+  .contact__right-side .btn {
+    margin-top: 10px;
+    width: 100%;
+  }
 }
 
 .contact .btn {
@@ -4993,6 +5025,13 @@ a {
   margin: 10px 3%;
 }
 
+@media (max-width: 768px) {
+  .contact .form input {
+    width: 90%;
+    margin: 10px 3%;
+  }
+}
+
 .contact .form__message {
   width: 90%;
   margin-top: 0px;
@@ -5013,6 +5052,8 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -5027,12 +5068,26 @@ a {
 
 .contact .form__actions label {
   font-size: 12px;
-  max-width: 70%;
+  max-width: 60%;
+}
+
+@media (max-width: 1024px) {
+  .contact .form__actions label {
+    font-size: 8px;
+    max-width: 85%;
+  }
 }
 
 .contact .form__actions .btn {
   background-color: transparent;
   margin-left: 10px;
+}
+
+@media (max-width: 806px) {
+  .contact .form__actions .btn {
+    margin-top: 30px;
+    margin-left: 15px;
+  }
 }
 
 .contact .form__actions .btn:hover {
@@ -5041,10 +5096,17 @@ a {
 
 .footer {
   min-height: 50px;
-  padding: 10px;
+  padding: 10px 0;
   font-size: 14px;
   color: #fff;
   background-color: #27805e;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    font-size: 8px;
+    padding: 2px 0;
+  }
 }
 
 .footer__author {

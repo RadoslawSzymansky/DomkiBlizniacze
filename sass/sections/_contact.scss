@@ -5,6 +5,10 @@
     background-size: cover;
     padding: 50px 10px;
 
+    @include mq(medium) {
+        margin-top: 50px;
+    }
+
     .title, .text {
         color: #fff;
     };
@@ -24,6 +28,26 @@
         padding-bottom: 50px;
         .btn:nth-child(2) {
             margin-bottom: 30px;
+        }
+
+        @media (max-width: 1024px) {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0 30px;
+            padding-bottom: 10px;
+            flex-wrap: wrap;
+
+            .btn:nth-child(2) {
+                margin-bottom: 0px;
+            }
+        }
+
+        @media (max-width: 420px) {
+            
+            .btn {
+                margin-top: 10px;
+                width: 100%;
+            }
         }
     }
 
@@ -62,7 +86,11 @@
 
         input {
             width: 25%;
-            margin: 10px 3% ;
+            margin: 10px 3%;
+            @media (max-width: 768px) {
+                width: 90%;
+                margin: 10px 3%;
+            }
         }
 
         &__message {
@@ -81,6 +109,7 @@
             margin-top: 40px;
             display: flex;
             justify-content: flex-start;
+            flex-wrap: wrap;
             align-items: center;
             margin-bottom: 50px;
 
@@ -91,11 +120,21 @@
             }
             label {
                 font-size: 12px;
-                max-width: 70%;
+                max-width: 60%;
+                @media (max-width: 1024px) {
+                    font-size: 8px;
+                    max-width: 85%;
+                }
+
             }
             .btn {
                 background-color: transparent;
                 margin-left: 10px;
+                @media (max-width: 806px) {
+                    margin-top: 30px;
+                    margin-left: 15px;
+                };
+
                 &:hover {
                     background-color: $color-primary-dark;
                 }
