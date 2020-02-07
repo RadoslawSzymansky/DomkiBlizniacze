@@ -7,7 +7,22 @@
 
     @include mq(medium) {
         margin-top: 50px;
-    }
+    };
+
+    .text {
+        max-width: 80%;
+        @include mq(medium) {
+            text-align: center;
+        };
+        &--title {
+            @include mq(medium) {
+                text-align: center;
+            }
+        }
+        @include mq(medium) {
+            min-width: 100%;
+        }
+    };
 
     .title, .text {
         color: #fff;

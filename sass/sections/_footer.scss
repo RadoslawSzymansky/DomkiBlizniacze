@@ -4,17 +4,23 @@
     font-size: 14px;
     color: #fff;
     background-color: $color-primary-dark;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
 
 
     @include mq(medium) {
         font-size: 8px;
         padding: 2px 0;
+        
     }
 
     &__author {
         text-align: right;
+
+        @media (max-width: 800px) {
+            text-align: left;
+        };
     };
+    
 };

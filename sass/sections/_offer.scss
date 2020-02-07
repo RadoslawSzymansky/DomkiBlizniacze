@@ -2,6 +2,7 @@
     margin-top: 100px;
     padding: 15px;
 
+
     @include mq(large) {
         margin-top: 40px;
     };
