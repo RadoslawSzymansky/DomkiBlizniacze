@@ -6,7 +6,12 @@
     background-color: #fff;
     border-bottom: .5px solid rgb(221, 220, 220);
     z-index: 999;
-    
+    transition: .2s;
+
+    @include mq(medium) {
+        left: 1000px;
+    };
+
     .container {
         padding: 0;
     }
@@ -14,9 +19,14 @@
     &__logo {
         font-size: 26px;
         line-height: 1;
+        padding-left: 15px;
         text-transform: uppercase;
         color: $color-primary;
         font-weight: 900;
+
+        @include mq(medium) {
+            margin-bottom: 30px;
+        };
     };
 
     &__wrapper {
@@ -24,17 +34,40 @@
         justify-content: space-between;
         align-items: center;
         min-height: 80px;
+
+        @include mq(medium) {
+            flex-direction: column;
+        };
     }
 
     &__list {
         display: flex;
         align-items: center;
+        // background-color: rgb(63, 49, 49);
+        @include mq(medium) {
+            flex-direction: column;
+            justify-content: space-around;
+            min-height: 350px;
+        };
     };
 
     &__item {
         margin: 0 10px;
         padding: 9px;
         overflow: hidden;
+
+        @include mq(large) {
+            margin: 0 10px;
+            padding: 9px 0;
+        };
+
+        @include mq(medium) {
+            padding: 10px;
+        };
+
+        @include mq(large) {
+            margin: 0 10px;
+        };
     };
 
     &__link {
@@ -42,6 +75,14 @@
         color: $color-text;
         transition: $transition-time;   
         font-weight: 500;
+        
+        @include mq(medium) {
+            margin-bottom: 20px;
+        };
+        @include mq(large) {
+            font-size: 14px;
+            padding: 0 5px ;
+        };
 
         &::after {
             display: block;
@@ -66,6 +107,20 @@
     };
 
     &__phone {
-
+        margin: 0 10px;
+        @include mq(large) {
+            margin: 0 7px;
+            font-size: 12px;
+        };
     };
 };
+
+.opened {
+    .menu {
+        @include mq(medium) {
+            left: 0;
+            bottom: 0;
+            padding: 15px;
+        };
+    }
+}

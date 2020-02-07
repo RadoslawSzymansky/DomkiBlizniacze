@@ -1,0 +1,45 @@
+.burger {
+    top: 25px;
+    right: 25px;
+    position: fixed;
+    cursor: pointer;
+    padding: 2px;
+    z-index: 10000;
+    display: none;
+    &__item {
+        width: 25px;
+        height: 3px;
+        margin-top: 5px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 3px;
+    }
+    &:hover &__item {
+        background-color: #666;
+    } 
+
+    @include mq(medium) {
+        display: block;
+    }
+    
+}
+
+.opened .burger {
+    right: 35px;
+
+    &__item {
+        transform: rotate(45deg);
+        margin-top: 0px;
+        width: 3px;
+        height: 25px;
+        transition: .2s;
+
+        &:nth-child(2) {
+            position: absolute;
+            transform: rotate(135deg);
+            top: 2px;
+        }
+        &:nth-child(3) {
+            display: none;
+        }
+    }
+}

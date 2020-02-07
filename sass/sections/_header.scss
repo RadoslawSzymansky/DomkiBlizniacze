@@ -2,4 +2,9 @@
     background-image: url(../../assets/header.png);
     background-size: cover;
     min-height: 600px;
+    background-position: center;
+
+    @include mq(large) {
+        min-height: 400px;
+    };
 }
