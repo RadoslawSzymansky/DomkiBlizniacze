@@ -12,6 +12,9 @@
 
     .text {
         max-width: 80%;
+        @include mq(medium) {
+            text-align: center;
+        };
         &--title {
             @include mq(medium) {
                 text-align: center;

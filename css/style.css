@@ -4773,6 +4773,13 @@ a {
   }
 }
 
+@media (max-width: 800px) {
+  .about .text {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
 .about .btn {
   display: inline-block;
   margin-top: 35px;
@@ -4800,6 +4807,12 @@ a {
 }
 
 @media (max-width: 800px) {
+  .offer .text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
   .offer .text--title {
     text-align: center;
   }
@@ -4820,12 +4833,37 @@ a {
   margin-bottom: 200px;
 }
 
+@media (max-width: 800px) {
+  .localization {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 800px) {
+  .localization .text {
+    text-align: center;
+    padding: 20px 40px;
+  }
+}
+
+.localization .text--title {
+  text-align: center;
+}
+
 .localization__header {
   margin-top: 40px;
   background-image: url(/assets/header.png);
+  background-position: center;
   min-height: 500px;
   background-size: cover;
   position: relative;
+}
+
+@media (max-width: 800px) {
+  .localization__header {
+    min-height: 700px;
+  }
 }
 
 .localization__columns {
@@ -4836,6 +4874,31 @@ a {
   left: 15%;
   right: 15%;
   padding: 15px;
+  padding-left: 0;
+}
+
+@media (max-width: 800px) {
+  .localization__columns {
+    position: static;
+    background-color: transparent;
+    padding-top: 10%;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 800px) {
+  .localization__text {
+    max-width: 80%;
+    margin-left: 0;
+    margin-bottom: 10%;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 25px;
+    text-align: center;
+  }
 }
 
 .localization .col-4 {
