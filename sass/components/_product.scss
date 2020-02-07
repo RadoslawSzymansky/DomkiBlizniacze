@@ -4,6 +4,7 @@
     height: 200px;
     overflow: hidden;
     padding: 20px;
+
     @include mq(large) {
         padding: 20px 0px 20px 40px; 
     };
@@ -16,6 +17,9 @@
        display: flex;
        justify-content: center;
        align-items: center;
+       @include mq(xsmall) {
+        justify-content: start;
+        };
        .img {
            max-width: 100px;
            @include mq(large) {
@@ -38,7 +42,6 @@
             font-size: 12px;
         };
         @include mq(small) {
-            // text-align: center;
             margin: 15px 0;
         };
     };
@@ -50,6 +53,9 @@
             color: $color-primary;
             flex-direction: column;
             text-align: left;
+            @include mq(xsmall) {
+                align-items: start;
+            };
 
             .price {
                 color: #000;
@@ -83,6 +89,7 @@
     &--sold {
         .product__label-1, .product__label-2 {
             background-color: $color-danger;
+            text-align: center;
         };
 
         .price {
@@ -110,8 +117,9 @@
         top: 81px;
         left: -82px;
         @include mq(small) {
-            width: 300px;
-            left: -132px;
+            width: 250px;
+            left: -109px;
+            top: 107px;
         };
     };
 
