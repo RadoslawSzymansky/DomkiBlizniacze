@@ -4645,7 +4645,7 @@ a {
 @media (max-width: 800px) {
   .about {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
   }
 }
 
@@ -4695,10 +4695,35 @@ a {
 
 .offer {
   margin-top: 100px;
+  padding: 15px;
+}
+
+@media (max-width: 1024px) {
+  .offer {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .offer {
+    margin-top: 20px;
+  }
 }
 
 .offer .text {
   max-width: 80%;
+}
+
+@media (max-width: 800px) {
+  .offer .text--title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .offer .text {
+    min-width: 100%;
+  }
 }
 
 .offer__list .product {
