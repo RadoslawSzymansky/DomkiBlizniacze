@@ -1,8 +1,21 @@
 .about {
     margin-top: 80px;
 
+    @include mq(medium) {
+       text-align: center;
+       margin-top: 20px;
+
+    };
+
     &__img-wrapper {
-        width: 80%;
+        .img {
+            max-width: 80%;
+            @include mq(xlarge) {
+                max-width: 95%;
+                border-radius: 25px;
+            };
+        };
+
         
         &::after {
             display: block;
@@ -14,11 +27,18 @@
             top: 50px;
             left: 50px;
             z-index: -1;
+
+            @include mq(xlarge) {
+                display: none;
+            }
         }
     }
 
     .text {
         max-width: 80%;
+        @include mq(large) {
+            min-width: 90%;
+        };
     }
 
     .btn {

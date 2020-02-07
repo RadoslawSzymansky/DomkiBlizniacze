@@ -7,4 +7,10 @@
     @include mq(large) {
         min-height: 400px;
     };
+    @include mq(medium) {
+        min-height: 300px;
+    };
+    @include mq(small) {
+        min-height: 200px;
+    };
 }
