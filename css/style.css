@@ -4699,7 +4699,7 @@ a {
 }
 
 .header {
-  background-image: url(../../assets/header.png);
+  background-image: url(../assets/header.png);
   background-size: cover;
   min-height: 600px;
   background-position: center;
@@ -4853,7 +4853,7 @@ a {
 
 .localization__header {
   margin-top: 40px;
-  background-image: url(/assets/header.png);
+  background-image: url(../assets/header.png);
   background-position: center;
   min-height: 500px;
   background-size: cover;
@@ -4908,7 +4908,7 @@ a {
 .contact {
   margin-top: 250px;
   color: #fff;
-  background-image: url(/assets/contactbgc.png);
+  background-image: url(../assets/contactbgc.png);
   background-size: cover;
   padding: 50px 10px;
 }
