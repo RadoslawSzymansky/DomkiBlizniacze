@@ -20,8 +20,8 @@
     &__header {
         margin-top: 40px;
         background-image: url(../assets/new4.jpg);
-        background-position: center;
-        min-height: 500px;
+        background-position: top;
+        min-height: 600px;
         background-size: cover;
         position: relative;
 
@@ -69,3 +69,43 @@
         padding: 15px;
     }
 }
+
+// lokalizacja 
+
+section#technology {
+    p {
+      line-height: 24px;
+      font-size: 16px;
+    }
+  
+    ul {
+      padding: 0;
+      margin: 0 0 20px 0;
+      float: left;
+      font-size: 15px;
+  
+      li {
+        float: left;
+        width: 100%;
+        margin-bottom: 6px;
+        position: relative;
+        padding-left: 30px;
+        line-height: 24px;
+  
+        &:after {
+          content: '';
+          width: 5px;
+          height: 5px;
+          background: #0dac66;
+          position: absolute;
+          left: 10px;
+          top: 10px;
+        }
+  
+        strong {
+          color: #5a5a5a;
+          font-weight: 600;
+        }
+      }
+    }
+  }

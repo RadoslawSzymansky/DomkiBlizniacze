@@ -4703,9 +4703,9 @@ a {
 }
 
 .header {
-  background-image: url(../assets/new1.jpg);
+  background-image: url(../assets/new-lg1.jpg);
   background-size: cover;
-  min-height: 600px;
+  min-height: 970px;
   background-position: center;
 }
 
@@ -4760,8 +4760,8 @@ a {
   width: 80%;
   height: 75%;
   position: absolute;
-  top: 100px;
-  left: 50px;
+  top: 130px;
+  left: 40px;
   z-index: -1;
 }
 
@@ -4862,8 +4862,8 @@ a {
 .localization__header {
   margin-top: 40px;
   background-image: url(../assets/new4.jpg);
-  background-position: center;
-  min-height: 500px;
+  background-position: top;
+  min-height: 600px;
   background-size: cover;
   position: relative;
 }
@@ -4911,6 +4911,42 @@ a {
 
 .localization .col-4 {
   padding: 15px;
+}
+
+section#technology p {
+  line-height: 24px;
+  font-size: 16px;
+}
+
+section#technology ul {
+  padding: 0;
+  margin: 0 0 20px 0;
+  float: left;
+  font-size: 15px;
+}
+
+section#technology ul li {
+  float: left;
+  width: 100%;
+  margin-bottom: 6px;
+  position: relative;
+  padding-left: 30px;
+  line-height: 24px;
+}
+
+section#technology ul li:after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: #0dac66;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+section#technology ul li strong {
+  color: #5a5a5a;
+  font-weight: 600;
 }
 
 .contact {
@@ -5152,7 +5188,6 @@ a {
 body {
   margin: 0;
   padding: 0;
-  min-height: 200vh;
   padding-top: 80px;
 }
 

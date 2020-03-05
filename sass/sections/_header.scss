@@ -1,7 +1,7 @@
 .header {
-    background-image: url(../assets/new1.jpg);
+    background-image: url(../assets/new-lg1.jpg);
     background-size: cover;
-    min-height: 600px;
+    min-height: 970px;
     background-position: center;
 
     @include mq(large) {
