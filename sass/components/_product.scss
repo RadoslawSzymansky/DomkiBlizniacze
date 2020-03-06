@@ -61,7 +61,7 @@
                 color: #000;
                 font-weight: 900;
                 font-size: 25px;
-                padding-left: 25px;
+                //padding-left: 25px;
                 @include mq(large) {
                     font-size: 22px;
                     padding-left: 15px;
@@ -72,6 +72,21 @@
                     padding-left: 0;
                 };
             };
+            a {
+                background: $color-primary;
+                padding: 8px 20px;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-top: 10px;
+                border:2px solid $color-primary;
+
+                &:hover {
+                    background:transparent;
+                    color:$color-primary;
+                }
+            }
     };
 
    
