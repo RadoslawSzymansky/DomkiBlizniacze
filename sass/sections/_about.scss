@@ -24,9 +24,9 @@
             content: "";
             background-color: $color-primary;
             width: 80%;
-            height: 75%;
+            height: 315px;
             position: absolute;
-            top: 130px;
+            top: 100px;
             left: 40px;
             z-index: -1;
 
@@ -38,6 +38,7 @@
 
     .text {
         max-width: 80%;
+        line-height: 1.6;
         @include mq(large) {
             min-width: 90%;
         };
@@ -50,5 +51,14 @@
     .btn {
         display: inline-block;
         margin-top: 35px;
+    }
+
+    .link {
+        color: $color-primary;
+        font-weight: 500;
+
+        &:hover {
+            color: #000;
+        }
     }
 }

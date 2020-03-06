@@ -4773,9 +4773,9 @@ a {
   content: "";
   background-color: #0dac66;
   width: 80%;
-  height: 75%;
+  height: 315px;
   position: absolute;
-  top: 130px;
+  top: 100px;
   left: 40px;
   z-index: -1;
 }
@@ -4788,6 +4788,7 @@ a {
 
 .about .text {
   max-width: 80%;
+  line-height: 1.6;
 }
 
 @media (max-width: 1024px) {
@@ -4806,6 +4807,15 @@ a {
 .about .btn {
   display: inline-block;
   margin-top: 35px;
+}
+
+.about .link {
+  color: #0dac66;
+  font-weight: 500;
+}
+
+.about .link:hover {
+  color: #000;
 }
 
 .offer {
